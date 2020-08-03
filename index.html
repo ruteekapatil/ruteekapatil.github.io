@@ -15,6 +15,8 @@
 	<!-- owl carousal css -->
 	<link rel="stylesheet" href="./vendor/owl-carousel/css/owl.carousel.min.css">
 	<link rel="stylesheet" href="./vendor/owl-carousel/css/owl.theme.default.min.css">
+	<!-- aos css -->
+	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 	<!-- custom css -->
 	<link rel="stylesheet" href="./css/style.css" />
 	<link rel="stylesheet" href="./css/responsive.css">
@@ -79,7 +81,8 @@
 		<section class="site-banner">
 			<div class="container">
 				<div class="row">
-					<div class="col-lg-6 col-md-6 col-12 site-title flex-center flex-column align-items-start">
+					<div class="col-lg-6 col-md-6 col-12 site-title flex-center flex-column align-items-start"
+						data-aos="fade-right">
 						<h3 class="title-text">Hey</h3>
 						<h1 class="title-text text-uppercase">I am <br> <span>R</span>utika <span>P</span>atil</h1>
 						<h4 class="title-text text-uppercase">Web Developer</h4>
@@ -91,7 +94,8 @@
 							</div>
 						</div>
 					</div>
-					<div class="col-lg-6 col-md-6 col-12 banner-img flex-center justify-content-end">
+					<div class="col-lg-6 col-md-6 col-12 banner-img flex-center justify-content-end"
+						data-aos="fade-left">
 						<img src="./img/banner/banner-image.png" alt="banner-image" class="img-fluid">
 					</div>
 				</div>
@@ -108,12 +112,13 @@
 		<section class="about-area" id="about">
 			<div class="container">
 				<div class="row">
-					<div class="col-lg-6 col-md-6 col-12 flex-center justify-content-start">
+					<div class="col-lg-6 col-md-6 col-12 flex-center" data-aos="fade-up-right">
 						<div class="about-image flex-center justify-content-start">
 							<img src="./img/about-us.png" class="img-fluid" alt="About Us">
 						</div>
 					</div>
-					<div class="col-lg-6 col-md-6 col-12 about-title flex-center flex-column align-items-start">
+					<div class="col-lg-6 col-md-6 col-12 about-title flex-center flex-column align-items-start"
+						data-aos="fade-up-left">
 						<h2 class="text-uppercase">
 							<span>About</span>
 							<span>me</span>
@@ -144,7 +149,7 @@
 		<!-- ================================================================= -->
 		<section class="service-area" id="services">
 			<div class="container">
-				<div class="row">
+				<div class="row" data-aos="fade-down">
 					<div class="col-12 text-center services-title">
 						<h2 class="title-text text-uppercase">Services offer</h2>
 						<p class="para">
@@ -155,7 +160,7 @@
 				</div>
 				<div class="container services-list">
 					<div class="row justify-content-center">
-						<div class="col-lg-3 col-md-6 col-12">
+						<div class="col-lg-3 col-md-6 col-12" data-aos="flip-right" data-aos-duration="1000">
 							<div class="services">
 								<div class="services-img text-center py-4">
 									<img src="./img/services/design.png" class="img-fluid" alt="Services 1">
@@ -169,7 +174,7 @@
 								</div>
 							</div>
 						</div>
-						<div class="col-lg-3 col-md-6 col-12">
+						<div class="col-lg-3 col-md-6 col-12" data-aos="flip-right" data-aos-duration="1000">
 							<div class="services">
 								<div class="services-img text-center py-4">
 									<img src="./img/services/development.png" class="img-fluid" alt="Services 2">
@@ -183,7 +188,7 @@
 								</div>
 							</div>
 						</div>
-						<div class="col-lg-3 col-md-6 col-12">
+						<div class="col-lg-3 col-md-6 col-12" data-aos="flip-right" data-aos-duration="1000">
 							<div class="services">
 								<div class="services-img text-center py-4">
 									<img src="./img/services/seo.png" class="img-fluid" alt="Services 4">
@@ -233,19 +238,19 @@
 						<p class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem, dolorum.</p>
 
 						<ul>
-							<li class="html">
+							<li class="html" data-aos="flip-up">
 								<h6 class="m-0">HTML</h6>
 							</li>
-							<li class="css">
+							<li class="css" data-aos="flip-up">
 								<h6 class="m-0">css</h6>
 							</li>
-							<li class="js">
+							<li class="js" data-aos="flip-up">
 								<h6 class="m-0">js & jquery</h6>
 							</li>
-							<li class="php">
+							<li class="php" data-aos="flip-up">
 								<h6 class="m-0">php</h6>
 							</li>
-							<li class="python">
+							<li class="python" data-aos="flip-up">
 								<h6 class="m-0">python</h6>
 							</li>
 						</ul>
@@ -276,7 +281,7 @@
 					<button type="button" data-filter=".drawing">Drawing</button>
 				</div>
 
-				<div class="row grid">
+				<div class="row grid" data-aos="fade-up">
 					<div class="col-lg-3 col-md-3 col-12 element-item latest">
 						<div class="our-project">
 							<div class="img">
@@ -404,7 +409,7 @@
 		<!-- ================================================================= -->
 		<!-- START CLIENT AREA -->
 		<!-- ================================================================= -->
-		<section class="about-area achievents">
+		<section class="about-area achievents" data-aos="zoom-in">
 			<div class="container">
 				<div class="row text-center">
 					<div class="col-12">
@@ -477,7 +482,7 @@
 						</div>
 					</div>
 				</div>
-				<div class="social text-center">
+				<div class="social text-center" data-aos="zoom-out">
 					<a href="#"><i class="fab fa-facebook"></i></a>
 					<a href="#"><i class="fab fa-instagram"></i></a>
 					<a href="#"><i class="fab fa-linkedin"></i></a>
@@ -512,6 +517,8 @@
 	<script src="./vendor/Magnific-Popup/jquery.magnific-popup.min.js"></script>
 	<!-- owl carousal js -->
 	<script src="./vendor/owl-carousel/js/owl.carousel.min.js"></script>
+	<!-- aos js -->
+	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
 	<!-- custom js -->
 	<script src="./js/main.js"></script>

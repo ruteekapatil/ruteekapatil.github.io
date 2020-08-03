@@ -42,9 +42,22 @@ nav .nav-item:hover .nav-link{
 /* banner area */
 .site-banner{
     position: relative;
+    background: url("../img/banner/background.png") no-repeat;
     background-position: 0% 50%;
     /* min-height: 90vh !important; */
     padding: 100px 0 !important;
+    animation: ba-animate 0.1s infinite;
+}
+@keyframes ba-animate{
+    0%{
+        background-position: 0% 50%;
+    }
+    50%{
+        background-position: 0% 51%;
+    }
+    100%{
+        background-position: 0% 50%;
+    }
 }
 .site-banner .site-title h3{
     font-weight: 500;

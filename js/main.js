@@ -52,4 +52,8 @@ $(document).ready(function () {
         }
     }
     navbarFixed();
+
+
+    // initialize aos
+    AOS.init();
 })
