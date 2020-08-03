@@ -1,8 +1,8 @@
 /* including fonts from fonts.css */
 @import url("./fonts.css");
 /* including variables */
-@import url("./partials/_variables.css");
-@import url("./partials/_global.css");
+@import url("./partials/variables.css");
+@import url("./partials/global.css");
 
 
 
