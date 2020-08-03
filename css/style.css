@@ -20,11 +20,22 @@ nav .nav-item .nav-link{
     padding: 1rem 0 1rem 2rem !important;
     letter-spacing: 1px;
     color: var(--title-color) !important;
+    position: relative;
 }
-nav .nav-item.active .nav-link{
+nav .nav-item .nav-link:after{
+    content: '';
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translateX(-50% + 2rem);
+    width: 0;
+    height: 5px;
+    background: var(--orange-color);
     color: var(--orange-color) !important;
-    font-family: var(--poppins-bold);
-    font-weight: normal;
+    transition: width 0.2s ease;
+}
+nav .nav-item .nav-link.active:after{
+    width: 30px;
 }
 nav .nav-item:hover .nav-link{
     color: var(--orange-color) !important;
