@@ -1,0 +1,441 @@
+/* including fonts from fonts.css */
+@import url("./fonts.css");
+/* including variables */
+@import url("./partials/_variables.css");
+@import url("./partials/_global.css");
+
+
+
+/* start navigatio */
+
+nav{
+    padding: 1rem 0;
+}
+.navbar-brand img{
+    max-height: 40px;
+}
+nav .nav-item .nav-link{
+    font-family: var(--poppins);
+    text-transform: uppercase;
+    padding: 1rem 0 1rem 2rem !important;
+    letter-spacing: 1px;
+    color: var(--title-color) !important;
+}
+nav .nav-item.active .nav-link{
+    color: var(--orange-color) !important;
+    font-family: var(--poppins-bold);
+    font-weight: normal;
+}
+nav .nav-item:hover .nav-link{
+    color: var(--orange-color) !important;
+}
+.navbar-toggler {
+    border: none !important;
+}
+.navbar-toggler i{
+    font-size: 1.5rem;
+    color: var(--primary-color);
+}
+/* end navigation */
+
+
+/* banner area */
+.site-banner{
+    position: relative;
+    background-position: 0% 50%;
+    /* min-height: 90vh !important; */
+    padding: 100px 0 !important;
+}
+.site-banner .site-title h3{
+    font-weight: 500;
+    font-size: 2rem;
+    position: relative;
+}
+.site-banner .site-title h3::after{
+    content: "";
+    position: absolute;
+    top: 80%;
+    height: 2px;
+    width: 18vw;
+    background: black;
+    display: inline-block;
+    margin-left: 20%;
+    transform: translateY(-5px);
+}
+.site-banner .site-title h1{
+    font-size: 5rem;
+    line-height: 100% !important;
+}
+.site-banner .site-title h1 span{
+    color: var(--orange-color);
+    text-shadow: 2px 2px #ff0000;
+}
+.site-banner .site-title h4{
+    font-size: 1.5rem;
+}
+
+.site-banner .banner-img > img{
+    width: 90%;
+    float: right !important;
+}
+/* end banner area */
+
+
+/* start about-area */
+.about-area{
+    padding: 100px 0 !important;
+}
+.about-area h2 > span{
+    display: block;
+    font: normal normal 49px/ 60px var(--poppins-bold);
+    letter-spacing: 5px;
+}
+.about-area .paragraph > p{
+    padding: 0;
+}
+.about-area img{
+    width: 80%;
+}
+/* end about-area */
+
+/* skills area sart */
+.skills-area{
+    padding-top: 100px;
+    padding-bottom: 30px;
+}
+.skills-area .skill-container ul{
+    padding: 0;
+    width: 100%;
+}
+.skills-area .skill-container ul li{
+    list-style: none;
+    margin-bottom: 3rem;
+    padding: 0.2rem 0;
+    width: 100%;
+    position: relative;
+    text-transform: uppercase;
+    color: var(--title-color);
+}
+.skills-area .skill-container ul li:before{
+    content: '';
+    position: absolute;
+    top: calc(100%);
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: var(--orange-light);
+    z-index: -1;
+    border-radius: 10px;
+}
+.skills-area .skill-container ul li:after{
+    content: '';
+    position: absolute;
+    top: calc(100%);
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: var(--orange-color);
+    z-index: -1;
+    border-radius: 10px;
+}
+.skills-area .skill-container ul li.html:after{
+    background: var(--primary-color2) !important;
+    animation: html 3s ease forwards;
+}
+@keyframes html{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 80%;
+    }
+}
+.skills-area .skill-container ul li.css:after{
+    animation: css 2s ease forwards;
+}
+@keyframes css{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 70%;
+    }
+}
+.skills-area .skill-container ul li.js:after{
+    animation: js 4s ease forwards;
+}
+@keyframes js{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 60%;
+    }
+}
+.skills-area .skill-container ul li.php:after{
+    background: var(--primary-color2) !important;
+    animation: php 2s ease forwards;
+}
+@keyframes php{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 80%;
+    }
+}
+.skills-area .skill-container ul li.python:after{
+    animation: python 4s ease forwards;
+}
+@keyframes python{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 60%;
+    }
+}
+/* skills area ends */
+
+
+/* start brand area */
+.brand-area{
+    padding: calc(4rem + 100px) 100px;
+}
+.brand-area .first-row .col-lg-4{
+    display: flex; 
+    justify-content: center;
+}
+.brand-area .first-row .single-brand{
+    border: 1px solid var(--border-color);
+    text-align: center;
+    padding: 1.8rem 0;
+    margin: .9rem 0;
+    width: 180px;
+    height: 100px;
+    transition: transform .4s ease;
+    cursor: pointer;
+}
+.brand-area .first-row .single-brand img{
+    width: 50%;
+}
+.brand-area .first-row .single-brand:hover{
+    box-shadow: var(--box-shadow);
+    transform: scale(1.1);
+}
+.brand-area .first-row .single-brand:hover img{
+    filter: brightness(0);
+}
+
+.brand-area .experience-area{
+    padding-left: 1rem;
+}
+.brand-area .experience-area span{
+    display: block;
+}
+.brand-area .experience-area .years-area{
+    background: url("../img/client-info-bg.png") no-repeat 45px 20px;
+    padding: 2rem 0;
+    width: 40rem;
+    height: 18rem;
+    padding-left: 8rem !important;
+    position: relative;
+}
+.brand-area .experience-area .bg-panel{
+    position: absolute;
+    left: -190px;
+    top: 0;
+    background: #e029290a;
+    width: 400px;
+    height: 400px;
+    margin-left: 340px;
+    z-index: -1;
+}
+.brand-area .experience-area .years-area .years{
+    font: normal bold 84px/ 40px var(--roboto);
+    color: var(--primary-color2);
+    z-index: 2;
+}
+.brand-area .experience-area .years-area h2 > span{
+    font: normal 600 22px/ 30px var(--roboto);
+}
+
+.brand-area .experience-area .call-area{
+    padding-left: 10rem;
+}
+/* end brand area */
+
+
+
+/* services area */
+.service-area{
+    padding: 100px 0;
+    padding-bottom: 0 !important;
+}
+.service-area .services-title{
+    padding: 0 14rem;
+}
+.service-area .services-title h2{
+    font-size: 35px;
+    font-family: var(--poppins-bold);
+    font-weight: normal;
+}
+.service-area .services{
+    background: rgba(248, 252, 253, 0.973);
+    padding: 2rem 0;
+    width: 100%;
+    margin: 5rem .5rem;
+    transition: box-shadow .7s ease;
+}
+.service-area .services:hover{
+    box-shadow: var(--box-shadow);
+}
+.service-area h5{
+    font-weight: 600;
+}
+/* end services */
+
+
+/* project area */
+.project-area{
+    padding: 100px 0;
+}
+.project-area .button-group button{
+    background: transparent;
+    border: none;
+    font: normal 500 16px/ 100% var(--poppins); 
+    padding: 1rem 1.5rem;
+    margin: 0;
+    margin-bottom: 2rem;
+    background: var(--orange-light);
+}
+.project-area .button-group button.active{
+    background: var(--orange-color);
+    background-clip: padding-box;
+}
+.project-area .grid h4{
+    font: normal 100 20px/20px var(--poppins);
+    margin: 0;
+}
+.project-area .grid a:hover img{
+    filter: brightness(1.1);
+}
+/* end project area */
+
+/* about area start */
+.about-area.achievents{
+    padding: 0 0 100px 0 !important;
+}
+.about-area .about-title1{
+    position: relative;
+}
+.about-area .about-title1 i{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 200px;
+    z-index: -1;
+    color: var(--orange-light);
+}
+.about-area .about-title1 .para{
+    padding: 1rem  0 0 0;
+    width: 80%;
+    margin: auto;
+}
+.about-area .client{
+    background: #ffffff10;
+    box-shadow: var(--box-shadow);
+    margin: 3rem 0rem;
+}
+.about-area .client .client-img{
+    padding: 2rem;
+}
+.about-area .client .about-client{
+    padding: 2rem 2rem 2rem 0;
+}
+.about-area .client .about-client h4{
+    font: normal bold 18px/25px var(--poppins);
+}
+.about-area .client .about-client p{
+    font-size: 14px;
+    margin: 0;
+}
+.about-area .owl-carousel .owl-item{
+    display: flex;
+    justify-content: center;
+    padding: 0 1.5rem;
+}
+.about-area .owl-carousel .owl-dots .owl-dot.active span{
+    background: var(--primary-color);
+    transform: scale(1.2) !important;
+}
+/* about area end */
+
+
+/* subscribe area start */
+.subscribe-area .subscribe{
+    background: var(--orange-light);
+    padding: 7rem 0;
+    color: var(--title-color);
+}
+.subscribe-area .subscribe .subscribe-title h4{
+    font: normal 700 30px/ 30px var(--poppins-bold);
+}
+.subscribe-area .subscribe .subscribe-title p{
+    padding: 1rem 4rem;
+}
+.subscribe-area .subscribe .input-textbox input{
+    width: 100%;
+    padding: 1.5rem 1rem;
+    border: 2px solid var(--orange-color);
+    background: transparent;
+    font: normal 500 17px/20px var(--roboto);
+}
+.subscribe-area .subscribe .input-textbox input:focus{
+    outline: none;
+    box-shadow: none;
+}
+.subscribe-area .subscribe .input-textbox input::placeholder{
+    color: var(--text-color);
+}
+.subscribe-area .subscribe .btn-submit button{
+    background: var(--orange-color);
+    border: none;
+    color: black;
+    padding: .85rem 2rem;
+    width: 100%;
+}
+.subscribe-area .subscribe .btn-submit button:active{
+    transform: scale(0.95);
+}
+.subscribe-area .social{
+    margin-top: 2rem;
+}
+.subscribe-area .social a > i{
+    font-size: 34px;
+    padding: 0 1rem;
+    color: var(--border-color);
+}
+.subscribe-area .social a > i:hover{
+    color: var(--primary-color);
+}
+/* subscribe area end */
+
+/* footer start */
+footer.footer-area{
+    padding: 1rem 0;
+    margin-top: 5rem;
+}
+.footer-area .social h5{
+    font: normal 500 23px/30px var(--poppins);
+}
+.footer-area .social a > i{
+    font-size: 22px;
+    padding: 2rem;
+    color: var(--title-color);
+}
+.footer-area .social a > i:hover{
+    color: var(--primary-color);
+}
+/* end footer */
