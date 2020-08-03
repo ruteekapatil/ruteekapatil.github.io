@@ -1,11 +1,3 @@
-/* including fonts from fonts.css */
-@import url("./fonts.css");
-/* including variables */
-@import url("./partials/variables.css");
-@import url("./partials/global.css");
-
-
-
 /* start navigatio */
 
 nav{
